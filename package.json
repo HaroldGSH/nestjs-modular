@@ -21,15 +21,18 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@nestjs/common": "^7.6.13",
-    "@nestjs/core": "^7.6.13",
-    "@nestjs/mapped-types": "^0.3.0",
-    "@nestjs/platform-express": "^7.6.13",
+    "@nestjs/axios": "^3.0.2",
+    "@nestjs/config": "^3.2.2",
+    "@nestjs/mapped-types": "^2.0.5",
+    "@nestjs/swagger": "^4.5.12-next.1",
+    "axios": "^1.7.2",
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
+    "joi": "^17.13.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^6.6.6"
+    "rxjs": "^6.6.7",
+    "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.5.6",
@@ -69,5 +72,8 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  }
+  },
+   "engines": {
+      "node": "18.x"
+    }
 }
